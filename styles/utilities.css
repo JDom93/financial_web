@@ -1,0 +1,117 @@
+.primary-text {
+    color: #28a745
+}
+
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn-primary,
+.bg-green {
+    background: #28a745;
+    color: #fff;
+}
+
+.btn-secondary {
+    color: #fff;
+    background: transparent;
+    border: solid 2px #f4f4f4;
+}
+
+.btn-blue,
+.bg-blue {
+    color: #fff;
+    background: #0284d0;
+}
+
+.btn-light,
+.bg-light {
+    color: #333;
+    background: #f4f4f4;
+}
+
+.btn-dark,
+.bg-dark {
+    color: #fff;
+    background: #777;
+}
+
+
+
+.flex-items {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.flex-items>div {
+    padding: 20px;
+}
+
+.flex-row.reverse {
+    flex-direction: row-reverse;
+}
+
+.flex-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100%;
+}
+
+.flex-row .flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    flex: 1;
+    flex-basis: 20%;
+}
+
+.cases .flex-row {
+    align-items: flex-start;
+}
+
+.flex-row .flex-column img {
+    object-fit: cover;
+}
+
+.flex-row .flex-column.txt-field {
+    padding: 30px;
+}
+
+.txt-field {
+    height: 100%;
+    /* padding: 30px; */
+}
+
+.txt-field h2 {
+    font-size: 40px;
+    font-weight: 100;
+}
+
+.txt-field h4 {
+    margin-bottom: 10px;
+}
+
+.txt-field p {
+    margin: 20px 0;
+}
+
+.section-header {
+    padding: 40px 30px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.section-header>div {
+    max-width: 50%;
+}

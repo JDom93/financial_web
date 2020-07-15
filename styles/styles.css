@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: #fff;
+    color: #333;
+    line-height: 1.6;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+h1,
+h2 {
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+p {
+    margin: 10px 0;
+}
+
+img {
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    background: #333;
+    color: #fff;
+    opacity: 0.8;
+    padding: 0 30px;
+    position: fixed;
+    top: 0px;
+    transition: 0.5s;
+}
+
+.navbar.top {
+    background: transparent;
+}
+
+.navbar .logo {
+    font-weight: 400;
+}
+
+.navbar i {
+    display: inline-block;
+
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar a {
+    color: #fff;
+    padding: 10px 20px;
+    margin: 0 5px;
+}
+
+.navbar a:hover {
+    border-bottom: 2px solid #28a745;
+}
+
+.hero {
+    background: url("../images/home/showcase.jpg") no-repeat center center/cover;
+    height: 100vh;
+    position: relative;
+    color: #fff;
+}
+
+.hero::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.hero * {
+    z-index: 10;
+}
+
+.hero .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100%;
+    padding: 0 20px;
+}
+
+.hero .content h1 {
+    font-size: 55px;
+}
+
+.hero .content p {
+    font-size: 23px;
+    max-width: 600px;
+    margin: 20px 0 30px;
+}
+
+.hero.blog {
+    background: url("../images/home/blog.jpg") no-repeat center center/cover;
+    height: 30vh;
+}
+
+.icons {
+    padding: 30px;
+}
+
+.icons h3 {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.icons i {
+    background-color: #28a745;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+section.cases,
+section.team {
+    padding-bottom: 50px;
+}
+
+.cases {
+    padding: 20px;
+}
+
+.cases .flex-column,
+.cases .flex-column img {
+    margin: 3px;
+}
+
+.cases img:hover {
+    opacity: 0.7;
+}
+
+.person img {
+    border-radius: 50%;
+}
+
+.callback {
+    background: #e5e5e5;
+    color: #333;
+}
+
+.txt-field form {
+    width: 100%;
+}
+
+.txt-field input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #777;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.txt-field input:focus {
+    outline: none;
+    border: 1px solid #28a745;
+}
+
+.txt-field button {
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* **** BLOG **** */
+
+p.meta i {
+    margin-right: 8px;
+}
+
+/* **** POST **** */
+
+.post div {
+    padding: 30px 50px;
+}
+
+.post h2 {
+    padding-bottom: 20px;
+    border-bottom: solid 2px #f3f3f3;
+
+}
+
+.post p.meta {
+    margin-bottom: 30px;
+}
+
+.post img {
+    display: block;
+    margin: 0 auto 40px;
+    border-radius: 50%;
+    width: 30%;
+}
+
+footer {
+    padding: 50px;
+    background: #333;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+footer i {
+    margin: 0 10px;
+}
+
+footer p {
+    margin-top: 20px;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .navbar ul {
+        width: 90vw;
+        justify-content: space-around;
+    }
+
+    .navbar h1 {
+        margin-bottom: 10px;
+    }
+
+    .navbar a {
+        padding: 0;
+        margin: 0;
+    }
+
+    .flex-row .flex-column.txt-field {
+        padding: 50px 30px;
+    }
+
+    .flex-items {
+        flex-direction: column;
+    }
+
+    .flex-row {
+        flex-direction: column;
+    }
+
+    .flex-row.reverse {
+        flex-direction: column;
+    }
+
+    .section-header {
+        padding: 40px 30px 20px;
+    }
+
+    .section-header>div {
+        max-width: 100%;
+    }
+
+    .person img {
+        width: 80%;
+    }
+}
